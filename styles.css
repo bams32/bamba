@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* _____________________________________ ent tete de la page index._______________________ */
+
+header {
+    background-color: rgb(88, 199, 162);
+    padding: 20px 0px;
+
+}
+
+.contener {
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.nav_bar ul {
+    display: flex;
+}
+
+.nav_bar ul li {
+    margin-left: 30px;
+
+}
+
+.nav_bar ul li a {
+    color: #555;
+    padding: 5px;
+    transition: 1S ease;
+    font-size: 1rem;
+}
+
+.nav_bar ul li a:hover {
+    transform: scale(1.1);
+    transform: translateY(-1.1rem);
+
+
+}
+
+.nav_bar ul li a:active {
+    color: red;
+}
+
+
+#bag {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #555;
+    transition: 1s ease-out;
+}
+
+/* span{
+    color: #f7f2f2 ;
+    border: 1px solid red;
+} */
+
+#bag:hover {
+    background-color: red;
+    color: white;
+    transform: translateZ(-15px)
+}
+
+.link-toogle {
+    display: none;
+}
+
+.header_mobile {
+    display: none;
+}
+
+header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+    padding-bottom: 1rem;
+}
+
+.col_2 a {
+    background-color: red;
+    padding: 0.5rem 2rem;
+    color: #f7f2f2;
+    border-radius: 30px;
+}
+
+header a:hover {
+    background-color: #f7f2f2;
+    color: orangered;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
+.col_2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col_2 img {
+    width: 100%;
+}
+
+
+/* ___________section categorie________________________ */
+
+.categorie {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.col_3 {
+    flex-basis: 25%;
+    min-width: 250px;
+    transition: 1S ease;
+
+}
+
+.col_3 img {
+    width: 100%;
+    min-width: 200px;
+}
+
+.col_3:hover {
+    transform: scale(1.1)
+}
+
+/* -------------- section des meilleur ventes-----------------------*/
+.section_ventes h2 {
+    margin: 50px 0px;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.section_ventes h2::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: red;
+}
+
+.meilleur_ventes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.col_4 {
+    flex-basis: 20%;
+    min-width: 250px;
+    transition: 1s ease;
+}
+
+.col_4:hover {
+    transform: translateY(4ch);
+}
+
+.col_4 img {
+    width: 100%;
+}
+
+.sous_titre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sous_titre h3 {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.sous_titre P {
+    font-size: 0.6rem;
+    margin-bottom: 7px;
+    font-weight: bold;
+
+}
+
+.sous_titre span {
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+}
+
+.etoile {
+    display: flex;
+    align-items: center;
+    color: rgb(88, 199, 162);
+    font-size: 10px;
+}
+
+.panier {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    transition: 1s ease;
+}
+
+.panier a:hover {
+    transform: scale(1.5);
+
+    color: red;
+}
+
+.panier a {
+    color: rgb(88, 199, 162);
+}
+
+/*______________________SECTION EXCLUSIF --------------------*/
+
+.excusif {
+    background-color: rgba(255, 99, 71, 1);
+    padding-bottom: 30px;
+
+}
+
+.excusif img {
+    width: 70%;
+    min-width: 300px;
+
+
+}
+
+.row_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.excusif P {
+    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+}
+
+/* ------------------section des temoingnage----------------- */
+
+
+.details_temoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details_temoin .etoile {
+    font-size: 20px;
+    padding-top: 20px;
+    color:rgba(255, 99, 71, 1) ;
+}
+
+.col_5 {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 8px 10px #555;
+
+}
+
+.temoin img {
+    border-radius: 100%;
+    min-width: 200px;
+}
+
+.temoin P {
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.bx-code {
+    font-size: 70px;
+    color: rgb(15, 75, 15);
+}
+
+.partenaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.partenaire img {
+    width: 70px;
+    margin-right: 5px;
+    background-color: yellow;
+}
+footer{
+    /* background-color: black; */
+    height: 80vh;
+}
+
+.app1 img {
+    width: 50px;
+}
+
+
+
+/* --------------------- header media queries --------------- */
+
+
+
+@media only screen and (max-width: 1190px) {
+
+    .contener {
+        width: 99%;
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+    #menu_toogle {
+        display: inline-block;
+    }
+
+    .nav_bar {
+        display: none;
+    }
+
+
+    .link-toogle {
+        display: inline-block;
+        width: 100%;
+        display: none;
+        justify-content: center;
+    }
+
+    .link-toogle.is-visible {
+        display: block;
+    }
+
+    .link-toogle li {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #555;
+        box-shadow: 3px 4px 5px #555;
+        background-color: #f7f2f2;
+
+    }
+
+    .link-toogle li a {
+        color: black;
+        font-size: 1.5rem;
+
+    }
+
+    #menu_toogle {
+        font-size: 30px;
+        display: inline-block;
+        background-color: #555;
+        cursor: pointer;
+    }
+
+    .header_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.partenaire {
+    display: none;
+   
+}}
